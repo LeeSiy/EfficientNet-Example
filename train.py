@@ -73,19 +73,19 @@ def plot_history(hist):
 
 #------------------------training
 def train():
-	X_train, X_test, Y_train, Y_test = np.load('/home/sylee/Project_Efficient/myeff/datasets/temp/img_data2.npy', allow_pickle=True)
+	X_train, X_test, Y_train, Y_test = np.load('/your/path/img_data.npy', allow_pickle=True)
 	X_train = np.append(X_train,X_test, axis=0)
 	Y_train = np.append(Y_train,Y_test, axis=0)
 	model = pretrained_weight_model() 
 	epochs = EPOCHS
 	hist = model.fit(X_train,Y_train, epochs=epochs, validation_split=0.1, verbose=2)
 	plot_history(hist)
-	model.save("/home/sylee/model1.h5")
+	model.save("/your/path/model1.h5")
 
 #train()
-model2 = tf.keras.models.load_model("/home/sylee/model1.h5")
-img = cv2.imread("/home/sylee/Project_Centernet/temp/train_images/scallop/R_S_066_070_021_027_150_004.jpg")
-img2 = cv2.imread("/home/sylee/Project_Centernet/temp/train_images/oyster/R_O_079_040_022_032_190_006.jpg")
+model2 = tf.keras.models.load_model("/your/path/model1.h5")
+img = cv2.imread("/your/path/.jpg")
+img2 = cv2.imread("/your/path/.jpg")
 img2 = np.expand_dims(img2, axis=0)
 imgs = np.expand_dims(img, axis=0)
 imgs = np.concatenate((imgs, img2), axis=0)
