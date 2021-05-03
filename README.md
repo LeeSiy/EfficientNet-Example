@@ -20,6 +20,7 @@ Example code for simple EfficientNet
 - result will be in datasets/temp file.
 
 # run train.py file
+- change output layer's class number as your custom datasets
 - example result
 
 ![Screenshot from 2021-05-03 15-06-55](https://user-images.githubusercontent.com/62841284/116846724-ed4cd380-ac23-11eb-8322-e1a0c558170e.png)
