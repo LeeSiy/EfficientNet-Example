@@ -22,3 +22,4 @@ Example code for simple EfficientNet
 # run train.py file
 - example result
 
+![Screenshot from 2021-05-03 15-06-55](https://user-images.githubusercontent.com/62841284/116846724-ed4cd380-ac23-11eb-8322-e1a0c558170e.png)
