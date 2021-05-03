@@ -8,14 +8,14 @@ Example code for simple EfficientNet
 # Prepare Data
 - make sure your data folder structure...
 - image/
-  -label1/
-    -img1.jpg
-    -img2.jpg
-    -...
-  -label2/
-    -img1.jpg
-    -img2.jpg
-  -...
+  --label1/
+    ---img1.jpg
+    ---img2.jpg
+    ---...
+  --label2/
+    ---img1.jpg
+    ---img2.jpg
+  --...
 - run datasets/create_data.py file with your path.
 - result will be in datasets/temp file.
 
