@@ -15,6 +15,7 @@ Example code for simple EfficientNet
   - label2/
     - img1.jpg
     - img2.jpg
+    - ...
   - ...
 - run datasets/create_data.py file with your path.
 - result will be in datasets/temp file.
