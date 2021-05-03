@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-groups_folder_path = '/home/sylee/Project_Centernet/temp/train_images/'
+groups_folder_path = '/your/folder/path/'
 categories = ["oyster", "scallop"]
 num_classes = len(categories)
 image_w = 224
